@@ -12,12 +12,12 @@
 // Same as JS but with type annotations — : string, : number, : boolean
 
 const myName1: string = "Pawan Tripathi"; // string type
-let age1: number = 20;                    // number type
+let age: number = 20;                    // number type
 const city1: string = "Khatima";         // string type
 
-console.log(myName); // output: Pawan Tripathi
+console.log(myName1); // output: Pawan Tripathi
 console.log(age);    // output: 20
-console.log(city);   // output: Khatima
+console.log(city1);   // output: Khatima
 
 
 // ************* Task-2 ************* //
@@ -47,8 +47,8 @@ console.log(price); // output: 200
 // let isLoggedIn: boolean = "yes"; // Error: Type 'string' is not assignable to type 'boolean'
                                     // "yes" is a string, not a boolean
 
-let isLoggedIn: boolean = true; // only true or false allowed
-console.log(isLoggedIn); // output: true
+let isLoggedInn: boolean = true; // only true or false allowed
+console.log(isLoggedInn); // output: true
 
 
 // ************* Task-4 ************* //

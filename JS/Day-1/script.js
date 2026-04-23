@@ -6,7 +6,7 @@
 // ************* Task-1 ************* //
 
 // Question: Create three variables — your name (const), your age (let),
-//           and your city (const). Log all three using console.log.
+// and your city (const). Log all three using console.log.
 
 // Rule: const = value never changes, let = value can change, var = old way (avoid it)
 
