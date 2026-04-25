@@ -3,7 +3,7 @@
 
 // ************* Task-1 ************* //
 
-// Question: for loop use karke 1 se 10 tak ke numbers print karo.
+// Question: Use a for loop to print numbers from 1 to 10.
 
 for (let i = 1; i <= 10; i++) {
   console.log(i); // output: 1 2 3 4 5 6 7 8 9 10
@@ -12,7 +12,7 @@ for (let i = 1; i <= 10; i++) {
 
 // ************* Task-2 ************* //
 
-// Question: while loop use karke 10 se 1 tak ulta count karo (countdown).
+// Question: Use a while loop to count down from 10 to 1 (countdown).
 
 let i = 10;
 while (i >= 1) {
@@ -23,21 +23,21 @@ while (i >= 1) {
 
 // ************* Task-3 ************* //
 
-// Question: for loop use karke 1 se 20 tak sirf even numbers print karo.
-//           continue use karo odd ko skip karne ke liye.
+// Question: Use a for loop to print only even numbers from 1 to 20.
+//           Use continue to skip odd numbers.
 
-// i%2 != 0 means odd number — continue skips it and moves to next iteration
+// i%2 != 0 means the number is odd — continue skips it and moves to next iteration
 
 for (let i = 1; i <= 20; i++) {
   if (i % 2 != 0) continue; // skip odd numbers
-  console.log(i); // output: 2 4 6 8 10 12 14 16 18 20
+  console.log(i);            // output: 2 4 6 8 10 12 14 16 18 20
 }
 
 
 // ************* Task-4 ************* //
 
-// Question: for...of loop use karke har fruit print karo.
-//           Jab "Banana" aaye toh break karo — uske baad kuch print na ho.
+// Question: Use for...of loop to print every fruit.
+//           When "Banana" is reached, break the loop — nothing should print after it.
 
 // Note: break is written BEFORE console.log — so "Banana" itself is also not printed
 // only Apple and Mango are printed
@@ -52,7 +52,7 @@ for (let fruit of fruits) {
 
 // ************* Task-5 ************* //
 
-// Question: for loop use karke multiplication table print karo 5 ka — 5x1=5 se 5x10=50 tak.
+// Question: Use a for loop to print the multiplication table of 5 — from 5x1=5 to 5x10=50.
 
 let num = 5;
 for (let j = 1; j <= 10; j++) {
@@ -63,7 +63,7 @@ for (let j = 1; j <= 10; j++) {
 
 // ************* Task-6 (Extra) ************* //
 
-// Question: Nested loop use karke yeh pattern print karo:
+// Question: Use a nested loop to print this pattern:
 // *
 // * *
 // * * *
@@ -72,10 +72,10 @@ for (let j = 1; j <= 10; j++) {
 
 // Outer loop controls the row number (1 to 5)
 // Inner loop runs i times per row — adds one more star each row
-// We collect stars in a string first, then print the whole row
+// Stars are collected in a string first, then the whole row is printed at once
 
 for (let i = 1; i <= 5; i++) {
-  let row = "";               // empty string for each row
+  let row = "";
   for (let j = 1; j <= i; j++) {
     row += "* ";              // add one star per inner loop run
   }

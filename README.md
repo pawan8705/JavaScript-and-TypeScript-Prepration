@@ -67,8 +67,8 @@ JS With TS/
 |-----|-------|----|----|
 | Day 1 | Variables & Data Types | ✅ | ✅ |
 | Day 2 | Conditions | ✅ | ✅ |
-| Day 3 | Loops | ⬜ | ⬜ |
-| Day 4 | Functions Basics | ⬜ | ⬜ |
+| Day 3 | Loops | ✅ | ✅ |
+| Day 4 | Functions Basics | ✅ | ✅ |
 | Day 5 | String Methods | ⬜ | ⬜ |
 | Day 6 | Math & Numbers | ⬜ | ⬜ |
 | Day 7 | Week 1 Revision | ⬜ | ⬜ |
