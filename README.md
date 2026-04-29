@@ -71,7 +71,7 @@ JS With TS/
 | Day 4 | Functions Basics | 6 JS + 6 TS | 4/6 | 3/6 | ✅ Done |
 | Day 5 | Revision — Day 1 to Day 4 | 20 JS + 20 TS | 9/20 | 7/20 | ✅ Done |
 | Day 6 | String Methods | 6 JS + 6 TS | 4/6 | 1.5/6 | ✅ Done |
-| Day 7 | Math & Numbers | — | — | — | ⬜ Pending |
+| Day 7 | Math & Numbers | 6 JS + 6 TS | 4/6 | 3/6 | ✅ Done |
 | Day 8 | Week 1 Revision | — | — | — | ⬜ Pending |
 | Day 9 | Arrays Basics | — | — | — | ⬜ Pending |
 | Day 10 | Array Methods | — | — | — | ⬜ Pending |
@@ -130,8 +130,8 @@ JS With TS/
 ### Day 5 — Revision (Day 1 to Day 4)
 - 20 JS + 20 TS revision questions covering all 4 topics
 - Key corrections: `var` scope leak, accumulating sum in loops, `for...of` vs `for...in`
-- Closures concept introduced (JS R4-3)
-- `pipe()` and `reduce()` introduced (JS R4-5)
+- Closures concept introduced
+- `pipe()` and `reduce()` introduced
 - `??` nullish coalescing vs `||` difference
 - TypeScript `type` alias for function signatures
 
@@ -146,6 +146,20 @@ JS With TS/
 - `length` — string length
 - `split("").reverse().join("")` — palindrome technique
 - TypeScript: string methods work the same, types enforced on parameters and returns
+
+### Day 7 — Math & Numbers
+- `Math.round()`, `Math.floor()`, `Math.ceil()` — rounding methods
+- `Math.abs()` — absolute value
+- `Math.max()`, `Math.min()` — with spread operator `...array`
+- `Math.pow()` — power
+- `Math.sqrt()` — square root
+- `Math.PI` — pi constant
+- `Math.random()` — random number formula: `Math.floor(Math.random() * (max - min + 1)) + min`
+- `parseInt()`, `parseFloat()`, `Number()` — string to number conversion
+- `isNaN()` — check if value is not a number
+- `toFixed(n)` — round to n decimal places (returns string — use `Number()` to convert back)
+- Floating point precision issue: `0.1 + 0.2 !== 0.3`
+- TypeScript: `type Stats = {}` — type alias for object shape
 
 ---
 
@@ -169,6 +183,11 @@ JS With TS/
 | Closures | Day 5 |
 | `reduce()` | Day 5 |
 | String methods | Day 6 |
+| Math methods | Day 7 |
+| Floating point precision issue | Day 7 |
+| `toFixed()` returns string | Day 7 |
+| Spread with Math.max/min | Day 7 |
+| `type` alias for objects | Day 7 |
 
 ---
 
@@ -181,6 +200,11 @@ JS With TS/
 - Function return type must match what is actually returned
 - `return` inside a loop exits on first iteration — think before using
 - `continue` and `break` are keywords — writing them as strings does nothing
+- `Math.max(array)` does not work — use `Math.max(...array)` with spread
+- `Math.parseInt` does not exist — `parseInt` is a global function
+- `toFixed()` returns a string — wrap with `Number()` if number type is needed
+- `0.1 + 0.2 === 0.3` is false — never compare floats directly in JavaScript
+- `Math.floor(min)` on an already integer value is unnecessary
 
 ---
 
@@ -200,5 +224,5 @@ JS With TS/
 **Name:** Pawan Tripathi
 **Goal:** Frontend / Fullstack Developer
 **Started:** Day 1 — Variables & Data Types
-**Current Day:** Day 6 — String Methods
-**Total Tasks Completed:** 59 JS + 59 TS = 118 tasks
+**Current Day:** Day 7 — Math & Numbers
+**Total Tasks Completed:** 65 JS + 65 TS = 130 tasks
