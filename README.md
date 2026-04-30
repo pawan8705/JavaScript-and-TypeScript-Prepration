@@ -44,7 +44,7 @@ JS With TS/
 | Day 5 | Revision — Day 1 to Day 4 |
 | Day 6 | String Methods |
 | Day 7 | Math & Numbers |
-| Day 8 | Week 1 Revision |
+| Day 8 | Week 1 Full Revision |
 | Day 9 | Arrays Basics |
 | Day 10 | Array Methods |
 | Day 11 | Objects Basics |
@@ -72,7 +72,7 @@ JS With TS/
 | Day 5 | Revision — Day 1 to Day 4 | 20 JS + 20 TS | 9/20 | 7/20 | ✅ Done |
 | Day 6 | String Methods | 6 JS + 6 TS | 4/6 | 1.5/6 | ✅ Done |
 | Day 7 | Math & Numbers | 6 JS + 6 TS | 4/6 | 3/6 | ✅ Done |
-| Day 8 | Week 1 Revision | — | — | — | ⬜ Pending |
+| Day 8 | Week 1 Full Revision | 6 JS + 6 TS | 3.5/6 | 2.5/6 | ✅ Done |
 | Day 9 | Arrays Basics | — | — | — | ⬜ Pending |
 | Day 10 | Array Methods | — | — | — | ⬜ Pending |
 | Day 11 | Objects Basics | — | — | — | ⬜ Pending |
@@ -151,7 +151,7 @@ JS With TS/
 - `Math.round()`, `Math.floor()`, `Math.ceil()` — rounding methods
 - `Math.abs()` — absolute value
 - `Math.max()`, `Math.min()` — with spread operator `...array`
-- `Math.pow()` — power
+- `Math.pow()` — power / exponent
 - `Math.sqrt()` — square root
 - `Math.PI` — pi constant
 - `Math.random()` — random number formula: `Math.floor(Math.random() * (max - min + 1)) + min`
@@ -160,6 +160,19 @@ JS With TS/
 - `toFixed(n)` — round to n decimal places (returns string — use `Number()` to convert back)
 - Floating point precision issue: `0.1 + 0.2 !== 0.3`
 - TypeScript: `type Stats = {}` — type alias for object shape
+
+### Day 8 — Week 1 Full Revision
+- `typeof typeof 42` = `"string"` — interview trick question
+- `null == undefined` is `true` — loose equality special rule
+- `null === undefined` is `false` — strict equality fails (different types)
+- `??` vs `||` difference revisited — `??` only reacts to null/undefined
+- FizzBuzz — check FizzBuzz condition FIRST before Fizz or Buzz
+- Closure concept — inner functions remember outer function variables
+- `slugify` — `trim + toLowerCase + split + filter + join` pattern
+- OTP generation — loop `length` times, add one digit per iteration
+- TypeScript: `type` alias must be defined BEFORE it is used
+- TypeScript: `push(String(i))` — convert number to string when array is `string[]`
+- TypeScript: `unknown` still requires type check before calling methods
 
 ---
 
@@ -180,14 +193,18 @@ JS With TS/
 | Hoisting | Day 4 |
 | Callback functions | Day 4 |
 | Rest parameters `...args` | Day 4 |
-| Closures | Day 5 |
+| Closures | Day 5 + Day 8 |
 | `reduce()` | Day 5 |
 | String methods | Day 6 |
 | Math methods | Day 7 |
 | Floating point precision issue | Day 7 |
 | `toFixed()` returns string | Day 7 |
 | Spread with Math.max/min | Day 7 |
-| `type` alias for objects | Day 7 |
+| `type` alias for objects | Day 7 + Day 8 |
+| `typeof typeof` trick | Day 8 |
+| FizzBuzz logic order | Day 8 |
+| OTP generation with loop | Day 8 |
+| slugify pattern | Day 8 |
 
 ---
 
@@ -204,7 +221,12 @@ JS With TS/
 - `Math.parseInt` does not exist — `parseInt` is a global function
 - `toFixed()` returns a string — wrap with `Number()` if number type is needed
 - `0.1 + 0.2 === 0.3` is false — never compare floats directly in JavaScript
-- `Math.floor(min)` on an already integer value is unnecessary
+- `typeof typeof 42` is `"string"` not `"number"` — typeof always returns a string
+- `null == undefined` is `true` — special loose equality rule
+- Return `0` for free tickets, not the string `"Free"` — match the return type
+- `unknown` type still requires type check before calling any methods
+- `type` alias must be defined before the function that uses it
+- In FizzBuzz, always check `i % 3 === 0 && i % 5 === 0` FIRST
 
 ---
 
@@ -224,5 +246,5 @@ JS With TS/
 **Name:** Pawan Tripathi
 **Goal:** Frontend / Fullstack Developer
 **Started:** Day 1 — Variables & Data Types
-**Current Day:** Day 7 — Math & Numbers
-**Total Tasks Completed:** 65 JS + 65 TS = 130 tasks
+**Current Day:** Day 8 — Week 1 Full Revision
+**Total Tasks Completed:** 71 JS + 71 TS = 142 tasks
